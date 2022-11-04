@@ -1,0 +1,117 @@
+:root {
+    /*Font Colors*/
+    --Link: #2b356e;
+    --Link-Hover: #853232;
+    --Text: #0f0f0f;
+    --Bold: #0f0f0f;
+    /*Font settings*/
+    --Font: Verdana, Source Sans Pro;
+    --Font-Size-Main: 16px;
+    /*Background*/
+    --Background-Color: #202124;
+    /*Sidebar*/
+    --Sidebar-Title: "Goergia";
+    --Sidebar-Color: #d3d5e1de;
+    --Sidebar-Links: #4d3232;
+    /*Body*/
+    --Body-Width: 650px;
+    --Body-Unfocused: 1; /*Regular transparency*/
+    --Body-Hover: 1; /*Hover transparency*/
+}
+
+*
+{ 
+    font-family: var(--Font) ,sans-serif;
+    font-size: var(--Font-Size-Main);
+    color: var(--Text);
+    text-align: left;
+}
+
+body
+{
+    background-color: var(--Background-Color);
+    margin: 0;
+   
+    word-wrap: break-word;
+}
+img { /*Images*/
+    border: 0;
+    max-width: 70%;
+}
+b, strong { /*Bold*/
+    text-shadow: 3px 3px 10px var(--Shadow) !important;
+    color: var(--Bold);
+}
+
+a { /*Links*/
+    color: var(--Link);
+    text-decoration: none;
+    
+    text-shadow: 3px 3px 10px var(--Shadow)
+}
+a:hover {
+    color: var(--Link-Hover);
+}
+
+#content {
+    width: var(--Body-Width);
+    margin: 60px 0 60px 460px;
+    background-color: var(--Sidebar-Color);
+}
+.tab {
+    padding: 1em;
+}
+
+h1
+{
+    text-align: center;
+}
+
+h2
+{
+    text-align: center;
+}
+
+/*Class for centering images*/
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/*SIDEBAR*/
+#sidebar {
+    background: var(--Sidebar-Color);
+    min-height: 260px !important;
+    height: 260px;
+    width: 260px;
+    position: fixed;
+    right: 100px;
+    top:100px;
+    padding: 20px;
+}
+#sidebar .icon { /*Icon*/
+    border-radius: 5%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sidebar .title {
+    font-size: calc(var(--Font-Size-Main) + 0.7em);
+    font-family: var(--Sidebar-Title);
+    text-align: center;
+    padding: 20px;
+}
+#sidebar .description {
+    text-align: justify;
+    padding:10px;
+    line-height:100%;
+}
+
+
